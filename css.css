@@ -1,0 +1,300 @@
+/* Font and Base Settings */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Kantumruy+Pro:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kantumruy Pro', 'Inter', sans-serif;
+    background-color: #fffdf9;
+    color: #4a3525;
+}
+
+/* Navigation Menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    background-color: #f39c12;
+    color: #ffffff;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1f2937;
+    line-height: 1.1;
+    font-family: 'Inter', sans-serif;
+}
+
+.brand-name .highlight {
+    color: #f39c12;
+}
+
+.brand-sub {
+    font-size: 9px;
+    font-weight: 700;
+    color: #e67e22;
+    letter-spacing: 0.8px;
+    margin-top: 2px;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #4a3525;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #e67e22;
+}
+
+/* Hero Section */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 5%;
+    max-width: 1240px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.sub-title {
+    display: inline-block;
+    background-color: #fcf2e3;
+    color: #b07d3b;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 46px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    color: #2c1e12;
+}
+
+.hero-content .highlight {
+    color: #e67e22;
+}
+
+.hero-content p {
+    font-size: 17px;
+    color: #786452;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #2d6a4f;
+    color: #ffffff;
+    padding: 12px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #1b4332;
+}
+
+.hero-image-card {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    background-color: #f3ede2;
+    padding: 12px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(180, 140, 100, 0.12);
+    min-height: 380px;
+    width: 100%;
+}
+
+.hero-image-card img {
+    width: 100%;
+    max-height: 480px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/* Common Section Titles */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+/* Essential Dog Care Section */
+.care-section {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 40px 5% 80px;
+}
+
+.care-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.care-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #f3f4f6;
+    padding: 35px 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s;
+}
+
+.care-card:hover {
+    transform: translateY(-4px);
+}
+
+.care-icon {
+    font-size: 28px;
+    color: #f39c12;
+    background-color: #fef9c3;
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+.care-card h3 {
+    font-size: 22px;
+    color: #1f2937;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.care-card p {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #e5e7eb;
+    color: #9ca3af;
+    font-size: 13px;
+    background: #0f172a;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+    .care-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .hero-image-card {
+        min-height: 240px;
+    }
+
+    .care-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .care-section {
+        padding: 20px 20px 40px;
+    }
+}
